@@ -1,14 +1,9 @@
-# node modules
-node_modules
-
-# ignore transpiled files
 dist
-lib
-
-.env
-
-#misc
+node_modules/
 .DS_Store
-
-yarn.lock
-.eslintcache
+.env
+.next
+out
+lerna-debug.log
+.env.local
+.env

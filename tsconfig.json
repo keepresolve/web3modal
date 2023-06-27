@@ -1,31 +1,27 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
-    "rootDir": "src",
-    "baseUrl": ".",
-    "module": "commonjs",
-    "target": "es5",
-    "lib": ["es7", "dom"],
-    "jsx": "react",
-    "allowSyntheticDefaultImports": true,
-    "composite": true,
-    "declaration": true,
-    "declarationMap": true,
-    "downlevelIteration": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "importHelpers": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "preserveSymlinks": true,
-    "resolveJsonModule": true,
+    "target": "ES2020",
+    "lib": ["DOM", "DOM.Iterable", "ES2021"],
+    "module": "ES2020",
+    "allowJs": false,
     "skipLibCheck": true,
-    "sourceMap": true,
     "strict": true,
-    "strictNullChecks": true,
-    "suppressImplicitAnyIndexErrors": true
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "Node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "allowUnreachableCode": false,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "@walletconnect/types": ["node_modules/@walletconnect/types"]
+    }
   },
-  "include": ["./src/**/*"]
+  "exclude": ["node_modules", "dist", "out"]
 }

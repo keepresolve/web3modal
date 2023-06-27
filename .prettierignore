@@ -1,0 +1,9 @@
+node_modules
+dist
+build
+.next
+.github
+.vscode
+_next
+out
+lerna.json
